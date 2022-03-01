@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prix: 35
   xp: 10
-  gameObject: {fileID: 129498665080674119, guid: 2c321e5f5eff46045a2cc0e825cbc73c, type: 3}
+  gameObject: {fileID: 3518593052344093563, guid: b0a8b8378a929224e9a7a59ca6663e73, type: 3}
   type: 3

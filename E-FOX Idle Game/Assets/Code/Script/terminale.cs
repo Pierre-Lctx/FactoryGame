@@ -14,11 +14,27 @@ public class terminale : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name.Contains("Carton"))
+        if(CheckItemExist(collision))
         {
             //Changer les valeurs pour la sale
             moneyScript.Sale(collision.gameObject.GetComponent<DataObject>().GetScriptableRessources().Prix, collision.gameObject.GetComponent<DataObject>().GetScriptableRessources().xp);
             Destroy(collision.gameObject);
         }
+    }
+
+    private bool CheckItemExist(Collision collision)
+    {
+        if (collision.gameObject.name.Contains("Carton"))
+            return true;
+        else if (collision.gameObject.name.Contains("Bois"))
+            return true;
+        else if (collision.gameObject.name.Contains("Or"))
+            return true;
+        else if (collision.gameObject.name.Contains("Diamand"))
+            return true;
+        else if (collision.gameObject.name.Contains("Roche"))
+            return true;
+        else
+            return false;
     }
 }
