@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RandomSpawn : MonoBehaviour
 {
+    [SerializeField] private List<ScriptableRessources> _listSR;
     public GameObject ObjectPrefab;
 
     public Vector3 center;
@@ -35,9 +36,12 @@ public class RandomSpawn : MonoBehaviour
 
     public void SpawnObject()
     {
+        int randObj = Random.Range(0, _listSR.Count-1);
+        ScriptableRessources srTemp = _listSR[randObj];
         Vector3 pos = center + new Vector3(Random.Range(-size.x / 2, size.x / 2), Random.Range(-size.y / 2, size.y / 2), Random.Range(-size.z / 2, size.z / 2));
 
-        Instantiate(ObjectPrefab, pos, Quaternion.identity);
+        GameObject go = Instantiate(srTemp.gameObject, pos, Quaternion.identity);
+        go.AddComponent<DataObject>().SetScriptableRessources(srTemp);
     }
 
     void OnDrawGizmosSelected()

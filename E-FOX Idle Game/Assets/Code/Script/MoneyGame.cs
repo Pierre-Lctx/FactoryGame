@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class MoneyGame : MonoBehaviour
 {
+    public ScriptableRessources ressource;
+
     public float money;
 
     public int level;

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c8802d8afc6934aa4c097a79a9c278, type: 3}
+  m_Name: Diamand
+  m_EditorClassIdentifier: 
+  Prix: 50
+  xp: 15
+  gameObject: {fileID: 129498665080674119, guid: 2c321e5f5eff46045a2cc0e825cbc73c, type: 3}
+  type: 4
