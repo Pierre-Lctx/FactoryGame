@@ -34,6 +34,8 @@ public class terminale : MonoBehaviour
             return true;
         else if (collision.gameObject.name.Contains("Roche"))
             return true;
+        else if (collision.gameObject.name.Contains("Stone"))
+            return true;
         else
             return false;
     }

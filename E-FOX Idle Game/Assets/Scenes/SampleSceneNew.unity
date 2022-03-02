@@ -1278,17 +1278,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _listSR:
-  - {fileID: 11400000, guid: 39744263dcebba44f88eb2077b99ce2f, type: 2}
-  - {fileID: 11400000, guid: fcff9146c35820545bea9f86ddd55f0b, type: 2}
-  - {fileID: 11400000, guid: fe603b3fdc7fc2a45a1b27b0c16b1894, type: 2}
-  - {fileID: 11400000, guid: 39744263dcebba44f88eb2077b99ce2f, type: 2}
-  - {fileID: 11400000, guid: fcff9146c35820545bea9f86ddd55f0b, type: 2}
-  - {fileID: 11400000, guid: fe603b3fdc7fc2a45a1b27b0c16b1894, type: 2}
-  - {fileID: 11400000, guid: 743acba0e8c62d944afa57f3c9547cf0, type: 2}
   - {fileID: 11400000, guid: a9378de2f26cbf64c850ffea6c7f0005, type: 2}
   _posSpawn: {fileID: 234058341}
   _sizeSpawn: {x: 3, y: 3, z: 3}
-  _speedSpawn: 4
+  _speedSpawn: 1
 --- !u!4 &1117298899
 Transform:
   m_ObjectHideFlags: 0
